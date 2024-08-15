@@ -1,6 +1,8 @@
 package br.ufpb.dcx.gustavo.rodrigues.agenda;
 
-public class Contato {
+import java.io.Serializable;
+
+public class Contato implements Serializable {
     private String nome;
     private int diaAniversario;
     private int mesAniversario;
