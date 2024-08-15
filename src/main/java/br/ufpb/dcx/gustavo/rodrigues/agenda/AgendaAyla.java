@@ -36,8 +36,11 @@ public class AgendaAyla implements Agenda{
 
     @Override
     public boolean removeContato(String nome) throws ContatoInexistenteException {
-
-        return false;
+        if (!this.contatos.containsKey(nome)){
+            throw new ContatoInexistenteException("Contato de nome '"+nome+"' não foi encontrado");
+        }
+        this.contatos.remove(nome);
+        return true;
     }
 
     @Override
