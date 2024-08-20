@@ -8,9 +8,11 @@ import java.util.Map;
 
 public class AgendaAyla implements Agenda{
     private Map<String, Contato> contatos;
+    private GravadorDeDados gravador;
 
     public AgendaAyla(){
         this.contatos = new HashMap<>();
+        this.gravador = new GravadorDeDados();
     }
 
     @Override
@@ -45,11 +47,11 @@ public class AgendaAyla implements Agenda{
 
     @Override
     public void salvarDados() throws IOException {
-
+        gravador.salvarContatos((HashMap<String, Contato>) contatos);
     }
 
     @Override
     public void recuperarDados() throws IOException {
-
+        gravador.recuperarContatos();
     }
 }
