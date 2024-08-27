@@ -1,4 +1,4 @@
-package br.ufpb.dcx.gustavo.rodrigues.agenda;
+package br.ufpb.dcx.gustavo.agenda;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -1,4 +1,4 @@
-package br.ufpb.dcx.gustavo.rodrigues.agenda;
+package br.ufpb.dcx.gustavo.agenda;
 
 import java.io.IOException;
 import java.util.ArrayList;

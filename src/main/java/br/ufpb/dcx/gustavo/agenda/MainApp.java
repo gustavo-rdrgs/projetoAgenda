@@ -1,4 +1,6 @@
-package br.ufpb.dcx.gustavo.rodrigues.agenda;
+package br.ufpb.dcx.gustavo.agenda;
+
+import br.ufpb.dcx.gustavo.agenda.gui.AgendaGUI;
 
 import javax.swing.*;
 import java.awt.event.WindowAdapter;
